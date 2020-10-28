@@ -8,7 +8,7 @@ public class MyMath {
 	
 	public List<Integer> primeNumbersGenerator(int n) {
 		
-		List<Integer> primeNumbers = new LinkedList<Integer>();
+		List<Integer> primeNumbers = new LinkedList<>();
 		
 		if(n >= 2) {
 			primeNumbers.add(2);
@@ -29,7 +29,7 @@ public class MyMath {
 		}
 		
 		for(int i = 2; i*i < n; i++) {
-			if(i%2 == 0)
+			if(n%i == 0)
 				return false;
 		}
 		
