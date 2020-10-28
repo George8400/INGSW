@@ -29,8 +29,11 @@ public class MyMath {
 		}
 		
 		for(int i = 2; i*i < n; i++) {
-			
+			if(i%2 == 0)
+				return false;
 		}
+		
+		return true;
 		
 	}
 	
